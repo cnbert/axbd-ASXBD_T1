@@ -1,0 +1,10 @@
+DELIMITER $$
+DROP PROCEDURE IF EXISTS alta$$
+CREATE PROCEDURE alta(a VARCHAR(30), b VARCHAR(30), c CHAR(9))
+BEGIN
+	INSERT INTO persoa(nome, apellido, nif) 
+		VALUES (a, b, c);
+END;
+$$
+
+DELIMITER ;

@@ -1,0 +1,8 @@
+DELIMITER $$
+DROP PROCEDURE IF EXISTS Hola_mundo $$
+CREATE PROCEDURE Hola_mundo()
+BEGIN
+SELECT "Hola mundo";
+END
+$$
+

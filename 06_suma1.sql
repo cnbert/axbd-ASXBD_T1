@@ -1,0 +1,12 @@
+DELIMITER $$
+DROP FUNCTION IF EXISTS suma1 $$
+CREATE FUNCTION suma1(numero INT) 
+	RETURNS INT
+BEGIN
+	DECLARE sum INT;
+		SET numero = numero + 1; 
+	RETURN numero;
+END;
+$$
+
+DELIMITER ;
